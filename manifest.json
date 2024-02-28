@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Agnes by Agora",
+  "description": "The future is now, old man.",
+  "version": "0.1",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "images/agora-logo-2023-large.png",
+    "32": "images/agora-logo-2023-large.png",
+    "48": "images/agora-logo-2023-large.png",
+    "128": "images/agora-logo-2023-large.png"
+  },
+  "action": {
+    "default_title": "Click to open panel"
+  },
+  "side_panel": {
+    "default_path": "popup.html",
+    "openPanelOnActionClick": true
+  },
+  "permissions": ["contextMenus", "storage", "sidePanel"]
+}
